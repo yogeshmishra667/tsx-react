@@ -36,7 +36,9 @@ function App() {
         <Heading>the data with osker</Heading>
       </Osker>
 
-      <Button handleClick={() => console.log('btn clicked')} />
+      <Button
+        handleClick={(event, Id) => console.log('btn clicked', event, Id)}
+      />
     </div>
   )
 }
