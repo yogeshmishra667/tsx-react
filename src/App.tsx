@@ -5,6 +5,7 @@ import { PersonList } from './Components/PersonList'
 import { Status } from './Components/Status'
 import { Heading } from './Components/heading'
 import Osker from './Components/oskar'
+import Button from './Components/button'
 
 function App() {
   const personName = {
@@ -34,6 +35,8 @@ function App() {
       <Osker>
         <Heading>the data with osker</Heading>
       </Osker>
+
+      <Button handleClick={() => console.log('btn clicked')} />
     </div>
   )
 }
