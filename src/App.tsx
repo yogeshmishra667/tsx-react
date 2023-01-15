@@ -4,6 +4,7 @@ import Person from './Components/Person'
 import { PersonList } from './Components/PersonList'
 import { Status } from './Components/Status'
 import { Heading } from './Components/heading'
+import Osker from './Components/oskar'
 
 function App() {
   const personName = {
@@ -30,6 +31,9 @@ function App() {
       <PersonList name={personList} />
       <Status status="success" />
       <Heading>Children heading</Heading>
+      <Osker>
+        <Heading>the data with osker</Heading>
+      </Osker>
     </div>
   )
 }
