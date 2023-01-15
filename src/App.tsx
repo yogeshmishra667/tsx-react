@@ -1,9 +1,9 @@
-import React from 'react'
 import Greet from './Components/greet'
 import './App.css'
 import Person from './Components/Person'
 import { PersonList } from './Components/PersonList'
 import { Status } from './Components/Status'
+import { Heading } from './Components/heading'
 
 function App() {
   const personName = {
@@ -29,6 +29,7 @@ function App() {
       <Person name={personName} />
       <PersonList name={personList} />
       <Status status="success" />
+      <Heading>Children heading</Heading>
     </div>
   )
 }
