@@ -6,6 +6,7 @@ import { Status } from './Components/Status'
 import { Heading } from './Components/heading'
 import Osker from './Components/oskar'
 import Button from './Components/button'
+import Input from './Components/Input'
 
 function App() {
   const personName = {
@@ -38,6 +39,10 @@ function App() {
 
       <Button
         handleClick={(event, Id) => console.log('btn clicked', event, Id)}
+      />
+      <Input
+        value=" "
+        handleChange={event => console.log('input accessed', event)}
       />
     </div>
   )
