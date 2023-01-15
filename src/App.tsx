@@ -7,6 +7,7 @@ import { Heading } from './Components/heading'
 import Osker from './Components/oskar'
 import Button from './Components/button'
 import Input from './Components/Input'
+import Container from './Components/Container'
 
 function App() {
   const personName = {
@@ -44,6 +45,7 @@ function App() {
         value=" "
         handleChange={event => console.log('input accessed', event)}
       />
+      <Container style={{ backgroundColor: 'red', padding: '100px' }} />
     </div>
   )
 }
