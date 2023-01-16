@@ -8,6 +8,7 @@ import Osker from './Components/oskar'
 import Button from './Components/button'
 import Input from './Components/Input'
 import Container from './Components/Container'
+import Counter from './Components/Counter'
 
 function App() {
   const personName = {
@@ -46,6 +47,7 @@ function App() {
         handleChange={event => console.log('input accessed', event)}
       />
       <Container style={{ backgroundColor: 'red', padding: '100px' }} />
+      <Counter />
     </div>
   )
 }
